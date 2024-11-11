@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+
+    <title>JUEGO</title>
+    <style>
+        .drag-container {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+        }
+      
+        .draggable {
+          width: 100px;
+          height: 100px;
+          background-color: lightblue;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body class="BODY">
+    <header>bienvenido al nivel 1<br> de 0 a 99</header><br><br>
+    <nav>
+        <a href="index.html"><button class="btn btn-volver">VOLVER</button></a>
+    </nav>
+    <main>
+      <div class="instruc">
+        <h1>INSTRUCCIONES</h1>
+        <div><p class="inst">Mueve la imagen  del cocodrilo hacia el campo correspondiente, dependiendo <br>si el numero mostrado es mayor o menor</p></div>
+        <div><p class="inst">TENIENDO EN CUENTA QUE EL COCODRILO DE LA IZQUIERA SIGNIFICA (MENOR QUE) Y EL DE LA DERECHA (MAYOR QUE)</p>
+      </div></div><br><br>
+
+      <!-- Boton para generar los numeros aleatorios -->
+      <div class="gnumeros"><button id="generarNumeros">Generar Números</button></div><br><br>
+      <div class="gnumeros"><button id="validar" onclick="validar()">VALIDAR</button></div>
+      
+      <div class="nums"><span id="numeroIzquierda"></span>
+      <span id="numeroDerecha"></span>
+    </div>
+  
+      <script>
+          // Función para generar un número aleatorio entre 0 y 99
+          function generarNumeroAleatorio() {
+              return Math.floor(Math.random() * 100);
+          }
+  
+          // Función para generar y mostrar números aleatorios
+          function generarYMostrarNumeros() {
+              const numeroIzquierda = generarNumeroAleatorio();
+              const numeroDerecha = generarNumeroAleatorio();
+  
+              // Mostrar los números en los elementos de la página
+              document.getElementById("numeroIzquierda").textContent = numeroIzquierda;
+              document.getElementById("numeroDerecha").textContent = numeroDerecha;
+          }
+  
+          // Agregar un evento de clic al botón
+          document.getElementById("generarNumeros").addEventListener("click", generarYMostrarNumeros);
+      </script>
+
+    <div id="ajustar"> 
+    <div 
+      id="resultado"
+      class="dropzone"
+      ondragover="onDragOver(event), allowDrop(event);"
+      ondrop="onDrop(event),drop(event);"
+    >
+      arrastra aqui
+    </div>
+    
+    </div>
+     <div class="parent">
+      <div class="origin" ondragover="onDragOver(event), allowDrop(event);"
+      ondrop="onDrop(event),drop(event);">
+        <div >
+          Menor que
+          <img id="menor" src="img/imagen2.png" style="height:160px ; width: 150px;"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          >
+        </div><br><br>
+
+        <div>
+          Igual
+          <img id="igual" src="img/imagen3.png" style="height:160px ; width: 150px;"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          >
+        </div><br><br>
+
+        <div>
+          Mayor que
+          <img id="mayor" src="img/imagen1.png" style="height:160px ; width: 150px;"
+          class="draggable"
+          draggable="true"
+          ondragstart="onDragStart(event);"
+          >
+        </div><br><br>
+        <div class="gnumeros"><button id="validar" onclick="reloadPage()">CONTINUAR</button></div>
+
+        <script>
+            function reloadPage() {
+                location.reload(); // Esta función recargará la página actual
+            }
+        </script>
+      </div>
+    </div>
+    </main><br><br>
+    <script src="drag-drop.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+.btn{
+    background-color:rgb(167, 221, 113);
+    padding: 160px 180px;
+    color: black;
+    text-transform: uppercase;
+    border: 4px solid rgb(167, 221, 113);
+    box-shadow: 0 12px rgb(140, 196, 84);
+    transition-duration: 1.0s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    border-radius: 25%;
+    
+}
+.btn:hover{
+    background-color: aquamarine;
+    border: 4px solid aquamarine;
+    color:red;
+    box-shadow: 0 12px rgb(139, 207, 207);
+}
+.btn-volver{
+    padding: 20px 50px;
+    border-radius: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 90px;
+   color: darkgoldenrod;
+}
+header:hover{
+    color: aquamarine;
+}
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+}
+h1:hover{
+    color: brown;
+}
+.inst{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.inst:hover{
+    color:darkgoldenrod;
+}
+.instruc{
+    background-color: rgb(215, 190, 156);
+    border-radius: 20%;
+    box-shadow: 0px 14px rgb(219, 199, 172); 
+    text-transform: uppercase;
+}
+#comprobar{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+}
+.centro{
+    margin: 0px 30px ;
+    border: 1px solid black;
+    padding: 80px 80px;
+}
+.drag-container{
+    border: transparent;
+    background-color:transparent;
+}
+.draggable{
+    background-color: rgb(196, 196, 157);
+    border: transparent;
+    padding: 50px 60px;
+}
+.gnumeros{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#generarNumeros{
+    background-color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 10%;
+    padding: 20px 60px;
+    font-family: cursive;
+    font-size: 150%;
+}
+#generarNumeros:hover{
+    background-color: azure;
+    border: 2px solid azure;
+}
+
+.nums{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nums span{
+    margin: 0px 290px;
+    padding: 20px 20px;
+    font-size: 150px;
+    font-family: cursive;
+}
+
+.parent {
+    border: 2px solid transparent;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 180px;
+    height: 140px;
+    margin-left: 350px;
+    
+  }
+  
+  .origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px 20px;
+    column-count: 3;
+    margin: 0%;
+    border: 2px solid transparent;
+
+  }
+  
+  .draggable {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvxlbmxRgn2WW59FFwg6_zgEsvmeEltgfqbl5UWdlM5SW7kdQzYGEHXOR7rKVUyuBRpq8&usqp=CAU");
+    font-weight: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 25px;
+    
+  }
+  
+  .dropzone {
+    background-color: rgb(199, 212, 212);
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border: 3px dashed;
+    border-color: gray;
+  }
+  #ajustar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 180px;
+    height: 140px;
+    margin: 100px auto;
+  }
+#validar{
+    background-color: rgb(108, 171, 150);
+    border: 2px solid rgb(108, 171, 150);
+    border-radius: 10%;
+    padding: 10px 40px;
+    font-family: cursive;
+    font-size: 120%;
+}
+
+footer{
+    text-align: center;
+}
+.BODY{
+   background-image: url("https://i.pinimg.com/originals/46/2a/76/462a762f64a63be8bdd6884c5d09675c.jpg");
+   background-size: cover;
+   margin: 2.9%;
+}
